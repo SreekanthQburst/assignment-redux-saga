@@ -1,0 +1,46 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+
+  background-color: burlywood;
+  padding: 4rem;
+}
+.login div {
+  margin-top: 1rem;
+}
+.login input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+.login .error {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: red;
+}
+.login .create-account {
+  cursor: pointer;
+  align-self: flex-end;
+  color: blue;
+}
+.login .button {
+  background-color: rgb(120, 221, 221);
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
