@@ -12,9 +12,7 @@ import ApolloClient from "apollo-boost";
 function App() {
   const clientParam = {
     cache: new InMemoryCache(),
-    // uri: "https://randomuser.me/api/?result=100",
-
-    uri: "https://48p1r2roz4.sse.codesandbox.io",
+    uri: "https://sxewr.sse.codesandbox.io/",
   };
   const client = new ApolloClient(clientParam);
   return (

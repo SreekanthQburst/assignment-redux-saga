@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useLazyQuery, useQuery, NetworkStatus } from "@apollo/react-hooks";
 
 // query
-import { GET_USER_LIST } from "../queries/UserList";
+import { GET_TODO_LIST } from "../graphql/query";
 // css
 import "../css/List.css";
 
@@ -22,12 +22,12 @@ export default function List() {
   const users = useSelector((state) => state.users);
 
   const [getUserList, { loading, data, error, networkStatus }] = useLazyQuery(
-    GET_USER_LIST,
+    GET_TODO_LIST,
     {
       notifyOnNetworkStatusChange: true,
     }
   );
-  // const { loading, error, data } = useQuery(GET_USER_LIST);
+  // const { loading, error, data } = useQuery(GET_TODO_LIST);
   if (networkStatus === NetworkStatus.refetch) console.log("Refetching!");
   if (loading) console.log(loading);
   if (error) console.log(error);

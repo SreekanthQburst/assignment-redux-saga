@@ -1,0 +1,68 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.todo .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.todo .add-btn {
+  background-color: aqua;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 3rem;
+  text-align: center;
+  align-self: flex-end;
+}
+/* .todo .search {
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+.todo .search input {
+  outline: none;
+  border-radius: 6px;
+  height: 1.2rem;
+}
+.todo .search button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+} */
+.todo .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.todo .card {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 14rem;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
+}
+.todo .card :first-child {
+  color: rgb(0, 0, 97);
+}
+.todo .card :nth-child(2) {
+  margin-top: 1rem;
+}
+
+/* .todo .buttons span {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgb(129, 147, 224);
+  padding: 1rem;
+}
+.todo .buttons .selected {
+  background-color: rgb(129, 224, 169);
+} */

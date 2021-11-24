@@ -1,0 +1,18 @@
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  min-width: 30rem;
+  min-height: 10rem;
+
+  background-color: rgb(135, 205, 222);
+  padding: 2rem;
+}
+.todo-item .id {
+  color: rgb(0, 0, 119);
+  margin-bottom: 1rem;
+}

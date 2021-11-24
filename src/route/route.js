@@ -7,6 +7,9 @@ import NoResult from "../components/NoResult";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
 import Header from "../components/Header";
+import TodoList from "../components/TodoList";
+import AddTodo from "../components/AddTodo";
+import TodoItem from "../components/TodoItem";
 export default function AppRoutes() {
   const auth = useSelector((state) => state.auth);
   return (
@@ -15,6 +18,9 @@ export default function AppRoutes() {
         <>
           <Header />
           <Routes>
+            <Route exact path="/todo/:id" element={<TodoItem />} />
+            <Route exact path="/add" element={<AddTodo />} />
+            <Route exact path="/graphql" element={<TodoList />} />
             <Route exact path="/user/:userid" element={<UserDetails />} />
             <Route exact path="/" element={<UserList />} />
             <Route path="*" element={<NoResult />} />

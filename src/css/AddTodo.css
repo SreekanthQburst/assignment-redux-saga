@@ -1,0 +1,59 @@
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+
+  background-color: rgb(135, 205, 222);
+  padding: 4rem;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.add-todo div {
+  margin-top: 1rem;
+}
+.add-todo input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 4px;
+  margin: 1rem 0rem;
+}
+.add-todo textarea {
+  width: 20rem;
+  height: 4rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 4px;
+  margin: 1rem 0rem;
+}
+.add-todo .error {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: red;
+}
+.add-todo .save {
+  outline: none;
+  border: none;
+  background-color: rgb(120, 221, 221);
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
